@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <table border="1" cellpadding="5" cellspacing="1">
+
+            <tr>
+                <th colspan="2">Student Registration Form</th>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input placeholder="Enter your name" type="text" name="name" id="name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input placeholder="enter your email" type="email" name="email" id="email" value =example@gmail.com></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input placeholder="enter ur phone no." type = "tel" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input placeholder="enter ur pass" type="password" id="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="skill">Skill:</label></td>
+                <td>
+                    <select name="skill" id="skill">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </td>
+            </tr>
+            <br>
+            </tr>
+            
+            <tr>
+                <td><label for="skill"> Skills: </label></td>
+                <td>
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="skill" id="html" value="html">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="skill" id="css" value="css">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" name="skill" id="js" value="js">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input id="date" type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea placeholder="Enter your message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type = "file" name ="file"></td>
+                <td><input type="range" max = "3" name="rating"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
