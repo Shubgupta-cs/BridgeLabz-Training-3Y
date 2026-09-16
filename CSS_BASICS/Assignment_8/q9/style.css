@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.effects-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.effect-card {
+    width: 180px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.effect-card:hover {
+    transform: scale(1.08) translateY(-5px);
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.effect-card:active {
+    transform: scale(1.02) translateY(0);
+}

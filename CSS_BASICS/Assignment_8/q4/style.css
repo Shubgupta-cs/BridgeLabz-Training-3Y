@@ -1,0 +1,56 @@
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+#main-header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.highlight-text {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#unique-box {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.combinator-section p {
+    color: #7f8c8d;
+}
+
+.combinator-section > h2 {
+    color: #27ae60;
+}
+
+.sibling-target + p {
+    background-color: #f1c40f;
+}
+
+.sibling-target ~ p {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #bdc3c7;
+    margin-top: 20px;
+}

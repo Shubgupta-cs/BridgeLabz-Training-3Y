@@ -1,0 +1,76 @@
+
+
+h2{
+    position: relative;
+}
+
+h2::before{
+    position: absolute;
+    content: " ";
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    top:50px;
+    transition: width 1s ease;
+}
+h2::first-letter{
+    font-size: 3rem;
+    color:green;
+}
+h2:hover::before{
+    width: 100px;
+}
+
+h2:hover::first-letter{
+    color:red;
+}
+.btn{
+    margin:20px 60px;
+    position:relative;
+    background:black;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border:5px solid transparent;
+    border-radius: 10px;
+    background:
+        linear-gradient(black,black) padding-box,
+        linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet) border-box;
+    background-size: 100% 100% 300% 100%;
+    cursor:pointer;
+    transition:0.3s;
+}
+/* .btn::before{
+    position:absolute;
+    content:" ";
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg);
+    color:white; */
+    /* padding:5px; */
+    /* border-radius:25px; 
+    height:27px;
+    opacity:0;
+    left:1px;
+} */
+/* .btn:hover::after{
+    opacity:1;
+    transition: opacity 1s ease;
+}
+.btn:hover::after{
+    opacity:1;
+} */
+
+.btn:hover{
+    animation: gradient 1s linear infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0 0,0% 0;
+    
+    }
+    100%{
+        background-position: 0 0, 300% 0;
+    }
+}

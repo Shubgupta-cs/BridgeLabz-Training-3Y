@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Selectors Showcase</h1>
+    </header>
+    <main class="content-area">
+        <p>This is a standard paragraph styled using an element selector.</p>
+        <p class="highlight-text">This paragraph is styled via a class selector.</p>
+        <div id="unique-box">This div is styled using an ID selector.</div>
+        <input type="text" placeholder="Attribute selector target">
+        <section class="combinator-section">
+            <h2>Combinator Section</h2>
+            <p>Direct descendant paragraph.</p>
+            <div>
+                <p>Nested descendant paragraph.</p>
+            </div>
+            <p class="sibling-target">Adjacent sibling paragraph.</p>
+            <p>General sibling paragraph.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Selectors Lab Footer</p>
+    </footer>
+</body>
+</html>
