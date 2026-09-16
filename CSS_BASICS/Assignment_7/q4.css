@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fa;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+.main-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background: #ffffff;
+    width: 240px;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-one {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+.card-one:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-two {
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.15);
+}
+.card-two:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 25px rgba(52, 152, 219, 0.25);
+}
+
+.card-three {
+    box-shadow: 0 8px 16px rgba(46, 204, 113, 0.15);
+}
+.card-three:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 28px rgba(46, 204, 113, 0.25);
+}
+
+.profile-card h3 {
+    margin-top: 0;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.profile-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
