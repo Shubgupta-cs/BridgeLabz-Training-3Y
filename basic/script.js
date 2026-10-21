@@ -148,33 +148,54 @@
 // console.log(num1);
 // console.log(typeof(num1));
 
-let add = function(a,b)
-{
-    return a+b;
+// let add = function(a,b)
+// {
+//     return a+b;
+// }
+
+// let a = add(10,3);
+// console.log(a);
+
+// function calculate(a,b,callback){
+//     return callback(a,b);
+// }
+
+// let abc = (a,b)=> a*b
+
+// let ans = calculate(10,20,add);
+// let multi = calculate(20,10,abc);
+// let mul = (a,b)=> a*b
+
+// console.log(ans)
+// console.log(multi)
+
+// let arr = [1,2,3,4,5];
+
+// let fun = (x)=>{
+//     return x*2;
+// }
+
+// let result = arr.map(fun);
+// console.log(result)
+
+
+//Day -4
+let student = {
+    id:101,
+    name:"raj",
+    mark:50,
+    address:{
+        city:"mathura",
+        pincode:588789
+    },
+    displayInfo: function(){
+        console.log(`My name is ${this.name} and get marks ${this.mark}`)
+    }
 }
 
-let a = add(10,3);
-console.log(a);
+let query = "city"
 
-function calculate(a,b,callback){
-    return callback(a,b);
-}
+console.log(student["address"][query])
+console.log(student)
 
-let abc = (a,b)=> a*b
-
-let ans = calculate(10,20,add);
-let multi = calculate(20,10,abc);
-let mul = (a,b)=> a*b
-
-console.log(ans)
-console.log(multi)
-
-let arr = [1,2,3,4,5];
-
-let fun = (x)=>{
-    return x*2;
-}
-
-let result = arr.map(fun);
-console.log(result)
-
+student.displayInfo()
