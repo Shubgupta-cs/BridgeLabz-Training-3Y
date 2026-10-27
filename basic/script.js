@@ -180,22 +180,73 @@
 
 
 //Day -4
-let student = {
-    id:101,
-    name:"raj",
-    mark:50,
-    address:{
-        city:"mathura",
-        pincode:588789
-    },
-    displayInfo: function(){
-        console.log(`My name is ${this.name} and get marks ${this.mark}`)
+// let student = {
+//     id:101,
+//     name:"raj",
+//     mark:50,
+//     address:{
+//         city:"mathura",
+//         pincode:588789
+//     },
+//     displayInfo: function(){
+//         console.log(`My name is ${this.name} and get marks ${this.mark}`)
+//     }
+// }
+
+// let query = "city"
+
+// console.log(student["address"][query])
+// console.log(student)
+
+// student.displayInfo()
+
+let listOfStudents = [
+    { id: 101, name: "rahul", marks: 65, gender: "male" },
+    { id: 102, name: "amit", marks: 75, gender: "male" },
+    { id: 103, name: "priya", marks: 85, gender: "female" },
+    { id: 104, name: "neha", marks: 90, gender: "female" }
+];
+// listOfStudents.forEach(student => {
+//     console.log(`My name is ${student.name} and got marks ${student.marks}`);
+// });
+
+// for(let i = 0; i<listOfStudents.length;i++){
+//     let ans = `my id is ${listOfStudents[i].id} and my name is ${listOfStudents[i].name} and marks is ${listOfStudents[i].marks}`
+//     console.log(ans)
+// }
+
+// let nameOfList = listOfStudents.map((x)=>{
+//     let upper = x.name.toUpperCase();
+//     return upper;
+// })
+
+// console.log(nameOfList)
+
+// let malecan = listOfStudents.filter((x)=> x.gender==="male") .map((x) => x.name.toUpperCase());
+
+
+// console.log(malecan)
+
+// let femalecan = listOfStudents.filter((x)=>{
+//     return x.gender==="female";
+// });
+
+// console.log(femalecan)
+
+let topmarks = listOfStudents.filter((x) => x.marks > 70) .map ((x) => x.name.toUpperCase());
+
+console.log(topmarks);
+
+let res =listOfStudents.map((x)=>{
+    if(x.gender=== "male"){
+        return "Mr. " + x.name;
     }
-}
+    else{
+        return "Mrs. " + x.name;
+    }
+})
 
-let query = "city"
+console.log(res);
 
-console.log(student["address"][query])
-console.log(student)
 
-student.displayInfo()
+
