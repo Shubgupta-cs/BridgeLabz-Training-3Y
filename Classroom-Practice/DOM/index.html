@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width:200px;
+        height:200px;
+        margin: 0 auto;
+        border : 2px solid black;
+    }
+    .active{
+        background-color: red;
+        border-radius: 30px;
+        padding: 30px;
+    }
+    .bg-blue{
+        background-color: blue;
+        border-radius: 30px;
+        padding: 30px;
+    }
+    .bg-green{
+        background-color: green;
+        border-radius: 30px;
+        padding: 30px;
+    }
+</style>
+<body>
+    <h1>DOM:manupulation of html element</h1>
+    <h1> Select :id class tagName</h1>
+
+    <div class = "box">
+        
+    </div>
+    <!-- <button id ="redBtn" >red</button>
+    <button id ="blueBtn" >blue</button>
+    <button id ="greenBtn" >Green</button> -->
+    <input id ="inputname" type ="text" placeholder="write here">
+    <button id ="boxE1" >Add</button>
+    
+</body>
+<script>
+    // const boxE1 = document.querySelector(".box");
+    // const redBtnE1 = document.querySelector("#redBtn");
+    // redBtnE1.addEventListener("click",()=>{
+    //     boxE1.classList.remove("bg-blue")
+    //     boxE1.classList.remove("bg-green")
+    //     boxE1.classList.add("active")
+    // })
+
+    // blueBtn.addEventListener("click",()=>{
+    //     boxE1.classList.remove("active")
+    //     boxE1.classList.remove("bg-green")
+    //     boxE1.classList.add("bg-blue")
+    // })
+    // greenBtn.addEventListener("click",()=>{
+    //     boxE1.classList.remove("active")
+    //     boxE1.classList.remove("bg-blue")
+    //     boxE1.classList.add("bg-green")
+    // })
+
+    const inputE1 = document.querySelector("#inputNum");
+    const btnE1 = document.querySelector("#btn");
+
+    boxE1.addEventListener("click",()=>{
+        let val = inputE1.value;
+        console.log(val);
+    })
+
+</script>
+</html>
