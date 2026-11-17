@@ -23,4 +23,6 @@ class bank{
     getBalance(){
         return this.#balance;
     }
+
+    amount = Number(p)
 }
