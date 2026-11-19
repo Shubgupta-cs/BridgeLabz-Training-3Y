@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="responsive_css_cheat_sheet.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Responsive CSS Cheat Sheet</h1>
+            <p>Quick reference guide for core responsive design concepts.</p>
+        </header>
+
+        <div class="cheat-sheet-grid">
+            <article class="sheet-card">
+                <h3>CSS Filters</h3>
+                <p class="term">filter: blur() | grayscale() | sepia()</p>
+                <p class="desc">Applies graphical effects like blurring or color shifting to elements.</p>
+            </article>
+            <article class="sheet-card">
+                <h3>Media Queries</h3>
+                <p class="term">@media (max-width: 768px)</p>
+                <p class="desc">Conditionally applies CSS rules based on device viewport dimensions.</p>
+            </article>
+            <article class="sheet-card">
+                <h3>Fluid Layouts</h3>
+                <p class="term">grid-template-columns: repeat(auto-fit, minmax(...))</p>
+                <p class="desc">Creates responsive grids that automatically wrap columns based on available space.</p>
+            </article>
+            <article class="sheet-card">
+                <h3>Responsive Typography</h3>
+                <p class="term">font-size: clamp(1rem, 2vw, 2rem)</p>
+                <p class="desc">Scales text smoothly between defined minimum and maximum size boundaries.</p>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

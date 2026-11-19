@@ -1,0 +1,19 @@
+/* Custom Theme Variables and Styles for Question 5 */
+:root {
+    --bs-primary: #6366f1;
+    --bs-primary-rgb: 99, 102, 241;
+    --bs-font-sans-serif: 'Inter', sans-serif;
+}
+body {
+    font-family: var(--bs-font-sans-serif);
+}
+.custom-btn {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #fff;
+}
+.custom-btn:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+    color: #fff;
+}

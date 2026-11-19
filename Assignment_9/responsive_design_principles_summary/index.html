@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="responsive_design_principles_summary.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Core Responsive Design Principles</h1>
+            <p>Essential pillars for building adaptive web layouts.</p>
+        </header>
+
+        <div class="principles-grid">
+            <article class="principle-card">
+                <h3>Fluid Layouts</h3>
+                <p class="definition">Uses relative units like percentages, flexbox, or grid instead of fixed pixels to scale proportions dynamically.</p>
+                <code>display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</code>
+            </article>
+            <article class="principle-card">
+                <h3>Flexible Media</h3>
+                <p class="definition">Ensures images, videos, and embedded objects scale within their containing elements without overflowing.</p>
+                <code>max-width: 100%; height: auto;</code>
+            </article>
+            <article class="principle-card">
+                <h3>Breakpoints</h3>
+                <p class="definition">Media query thresholds where layout styles adjust to match specific device screen dimensions.</p>
+                <code>@media (max-width: 600px) { ... }</code>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

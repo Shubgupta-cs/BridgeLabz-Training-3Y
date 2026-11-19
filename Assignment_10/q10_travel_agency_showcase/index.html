@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner carousel-container">
+                <div class="carousel-item active h-100" data-bs-interval="4000">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Yosemite">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Explore Majestic Mountains</h2>
+                        <p>Discover breathtaking hiking trails and serene alpine views.</p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="4000">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Beach">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Tropical Paradise Getaways</h2>
+                        <p>Relax on pristine white-sand beaches with crystal-clear waters.</p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="4000">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 h-100 object-fit-cover" alt="Cityscape">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Historic City Adventures</h2>
+                        <p>Immerse yourself in rich cultures and architectural wonders.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h3 class="fw-bold mb-3">Summer Booking Goal</h3>
+                <p class="text-muted mb-3">We are 70% towards achieving our target for summer tour packages booked.</p>
+                <div class="progress progress-box">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70% Completed</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">Wanderlust Travel Agency &bull; Contact: support@wanderlust.com &bull; Phone: +91 98765 43210</p>
+            <small class="text-white-50">&copy; 2026 Wanderlust Inc. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
