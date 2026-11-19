@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    padding: 4rem 1.5rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    color: #0f172a;
+}
+
+/* Three equal columns with equal height */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.plan-card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlighted most popular plan */
+.plan-card.popular {
+    border: 3px solid #2563eb;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.12);
+}
+
+/* Hover enlargement and background color transition */
+.plan-card:hover {
+    transform: scale(1.04);
+    background-color: #eff6ff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+.price {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+}
+
+.price span {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #64748b;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+ul li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 0.85rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+}
+
+.popular .btn {
+    background-color: #2563eb;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
